@@ -129,6 +129,12 @@ h3 {
   font-family: inherit;
 }
 
+#city{width: 50%}
+#state{width: 15%}
+#zip{width: 35%}
+#county{width: 45%}
+#country{width: 55%}
+
 .form-group label {
   text-align: left;
   display: block;
@@ -212,4 +218,5 @@ h3 {
   .heading p {
     font-size: 1.5rem;
   }
+
 }
