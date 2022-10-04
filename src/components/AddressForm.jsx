@@ -18,7 +18,8 @@ function AddressForm() {
 
     const onSubmit = e => {
         e.preventDefault()
-        dispatch(createAddress({address}));
+        dispatch(createAddress({ address }));
+        console.log({address})
          setAddress({
             street: '',
             city: '',
@@ -27,6 +28,7 @@ function AddressForm() {
             county: '',
             country: '',}
         )
+        console.log({ address })
     }
 
     return (

@@ -27,9 +27,21 @@ const getAddresses = async (token) => {
     return response.data
 }
 
+// Delete user address
+const deleteAddress = async (addressId, token) => {
+    const config = {
+        headers: {
+            Authorization: `Bearer ${token}`,
+        },
+    }
+
+    const response = await axios.delete(API_URL + addressId, config)
+}
+
 const addressService = {
     createAddress,
-    getAddresses
+    getAddresses,
+    deleteAddress
 }
 
 export default addressService
